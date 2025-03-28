@@ -1,0 +1,54 @@
+<div class="flex justify-between">
+  <h1 class="text-3xl">Danh sách sản phẩm</h1>
+  <button nz-button nzType="primary" [routerLink]="['/create']">
+    Thêm mới
+  </button>
+</div>
+
+<nz-table #basicTable [nzData]="products">
+  <thead>
+    <tr>
+      <th>Hình ảnh</th>
+      <th>Tên sản phẩm</th>
+      <th>Giá</th>
+      <th>Mô tả</th>
+      <th>Danh mục</th>
+      <th>Hành động</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let product of products">
+      <td>
+        <img src="{{ product.image }}" width="100" alt="" />
+      </td>
+      <td>{{ product.name }}</td>
+      <td>{{ product.price }}</td>
+      <td>{{ product.description }}</td>
+      <td>{{ product.category }}</td>
+      <td>
+        <div class="flex gap-2">
+          <button
+            nz-popconfirm
+            nzPopconfirmTitle="Bạn có chắc xóa sản phẩm không?"
+            (nzOnConfirm)="onDelete(product.id)"
+            nzPopconfirmPlacement="top"
+            nz-button
+            nzType="primary"
+            nzShape="round"
+            nzDanger
+          >
+            Xóa
+          </button>
+          <button
+            nz-button
+            nzType="primary"
+            [routerLink]="['/edit', product.id]"
+            nzShape="round"
+          >
+            Sửa
+          </button>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</nz-table>

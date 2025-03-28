@@ -1,0 +1,60 @@
+<h1 class="text-3xl ml-5 !mb-7">Cập nhật sản phẩm</h1>
+
+<form nz-form [formGroup]="validateForm" (ngSubmit)="submitForm()">
+  <nz-form-item>
+    <nz-form-label [nzSm]="2" [nzXs]="24" nzRequired
+      >Tên sản phẩm</nz-form-label
+    >
+    <nz-form-control [nzSm]="5" [nzXs]="24" nzErrorTip="Vui lòng nhập họ tên!">
+      <input nz-input placeholder="Nhập họ tên" formControlName="name" />
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label [nzSm]="2" [nzXs]="24" nzRequired>Đơn giá</nz-form-label>
+    <nz-form-control [nzSm]="5" [nzXs]="24" nzErrorTip="Vui lòng nhập giá!">
+      <input
+        nz-input
+        type="number"
+        placeholder="Nhập giá sản phẩm"
+        formControlName="price"
+      />
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label [nzSm]="2" [nzXs]="24" nzRequired>Mô tả</nz-form-label>
+    <nz-form-control [nzSm]="5" [nzXs]="24" nzErrorTip="Vui lòng nhập mô tả!">
+      <input nz-input placeholder="Nhập mô tả" formControlName="description" />
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label [nzSm]="2" [nzXs]="24" nzRequired>Mô tả</nz-form-label>
+    <nz-form-control
+      [nzSm]="5"
+      [nzXs]="24"
+      nzErrorTip="Vui lòng chọn danh mục!"
+    >
+      <nz-select formControlName="category" nzPlaceHolder="Chọn danh mục">
+        <nz-option
+          *ngFor="let item of categories"
+          [nzValue]="item.value"
+          [nzLabel]="item.label"
+        ></nz-option>
+      </nz-select>
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label [nzSm]="2" [nzXs]="24" nzRequired>Hình ảnh</nz-form-label>
+    <nz-form-control
+      [nzSm]="5"
+      [nzXs]="24"
+      nzErrorTip="Vui lòng nhập đường dẫn!"
+    >
+      <input nz-input placeholder="Nhập đường dẫn" formControlName="image" />
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item nz-row class="register-area">
+    <nz-form-control [nzSpan]="14" [nzOffset]="2">
+      <button nz-button nzType="primary">Cập nhật</button>
+    </nz-form-control>
+  </nz-form-item>
+</form>

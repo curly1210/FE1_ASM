@@ -1,0 +1,20 @@
+{
+  "products": [
+    {
+      "name": "Iphone 15",
+      "price": 12000,
+      "description": "Mô tả",
+      "category": "iphone",
+      "image": "https://cdn.tgdd.vn/Products/Images/42/303716/s16/iphone-15-green-2-650x650.jpg",
+      "id": 1
+    },
+    {
+      "name": "samsung 15 mới nè các tình yêu",
+      "price": 1,
+      "description": "1",
+      "category": "samsung",
+      "image": "https://traidepbaniphone.com/thumbs/760x540x2/upload/product/iphone-15-pro-max-gold-thumbtz-650x650-2984.png",
+      "id": 2
+    }
+  ]
+}
