@@ -1,0 +1,30 @@
+<nz-layout>
+  <nz-header class="mb-10 flex justify-between">
+    <div class="logo">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/FPT_logo_2010.svg/2560px-FPT_logo_2010.svg.png"
+        alt=""
+        width="60"
+      />
+    </div>
+
+    <ul nz-menu nzTheme="dark" nzMode="horizontal">
+      <ng-container *ngIf="!isLoggedIn; else loggedInTpl">
+        <li [routerLink]="['/register']" nz-menu-item>Đăng ký</li>
+        <li [routerLink]="['/login']" nz-menu-item>Đăng nhập</li>
+      </ng-container>
+
+      <ng-template #loggedInTpl>
+        <li (click)="logout()" nz-menu-item>Đăng xuất</li>
+      </ng-template>
+      <!-- <li [routerLink]="['/register']" nz-menu-item>Đăng ký</li>
+      <li [routerLink]="['/login']" nz-menu-item>Đăng nhập</li> -->
+    </ul>
+  </nz-header>
+  <nz-content>
+    <div class="inner-content">
+      <router-outlet />
+    </div>
+  </nz-content>
+  <nz-footer></nz-footer>
+</nz-layout>
