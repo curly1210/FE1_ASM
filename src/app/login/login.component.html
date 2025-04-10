@@ -2,14 +2,14 @@
 
 <form nz-form [formGroup]="validateForm" (ngSubmit)="submitForm()">
   <nz-form-item>
-    <nz-form-label [nzSm]="1" [nzXs]="24" nzRequired>Email</nz-form-label>
+    <nz-form-label [nzSm]="2" [nzXs]="24" nzRequired>Email</nz-form-label>
     <nz-form-control [nzSm]="5" [nzXs]="24" nzErrorTip="Vui lòng nhập email!">
       <input nz-input placeholder="Nhập họ tên" formControlName="email" />
     </nz-form-control>
   </nz-form-item>
 
   <nz-form-item>
-    <nz-form-label [nzSm]="1" [nzXs]="24" nzRequired>Mật khẩu</nz-form-label>
+    <nz-form-label [nzSm]="2" [nzXs]="24" nzRequired>Mật khẩu</nz-form-label>
     <nz-form-control [nzSm]="5" [nzXs]="24" [nzErrorTip]="passwordErrorTpl">
       <input
         nz-input
@@ -29,7 +29,7 @@
   </nz-form-item>
 
   <nz-form-item nz-row class="register-area">
-    <nz-form-control [nzSpan]="14" [nzOffset]="1">
+    <nz-form-control [nzSpan]="14" [nzOffset]="2">
       <button nz-button nzType="primary">Đăng nhập</button>
     </nz-form-control>
   </nz-form-item>

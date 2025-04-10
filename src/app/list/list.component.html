@@ -5,6 +5,25 @@
   </button>
 </div>
 
+<nz-input-group
+  style="width: 200px; margin-bottom: 20px"
+  nzSearch
+  [nzAddOnAfter]="suffixIconButton"
+>
+  <input
+    type="text"
+    [(ngModel)]="searchValue"
+    (ngModelChange)="search$.next($event)"
+    nz-input
+    placeholder="Tìm kiếm sản phẩm"
+  />
+</nz-input-group>
+<ng-template #suffixIconButton>
+  <button nz-button nzType="primary" nzSearch>
+    <nz-icon nzType="search" />
+  </button>
+</ng-template>
+
 <nz-table #basicTable [nzData]="products">
   <thead>
     <tr>

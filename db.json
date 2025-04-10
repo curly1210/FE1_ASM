@@ -1,7 +1,7 @@
 {
   "products": [
     {
-      "name": "Iphone 15",
+      "name": "Iphone 15 đẹp trai",
       "price": 12000,
       "description": "Mô tả",
       "category": "iphone",
@@ -19,18 +19,11 @@
   ],
   "users": [
     {
-      "email": "cuong@gmail.com",
-      "password": "$2a$10$ihMWf3SsE5fARFRoNLFCz.z/XLkbIUFqBK.MFMPP8FpmVA.qk3SLO",
-      "phone": "0898645513",
-      "role": "user",
-      "id": 1
-    },
-    {
       "email": "1210.curly@gmail.com",
-      "password": "$2a$10$kYxMI4bnvQMVDvU2LDgtg.uThb4kwGhc3TzFF2kEwJjGkUr0rB5tO",
-      "phone": "112312312",
-      "role": "user",
-      "id": 2
+      "password": "$2a$10$MA90kTuHvjj1lPSwACTcpO0CBbULZ/e85A1NzQTHLkl1CuW0bZPxG",
+      "phone": "656561456",
+      "role": "admin",
+      "id": 1
     }
   ]
 }
