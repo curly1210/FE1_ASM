@@ -2,15 +2,15 @@
   "products": [
     {
       "name": "Iphone 15 đẹp trai",
-      "price": 12000,
+      "price": 999,
       "description": "Mô tả",
       "category": "iphone",
-      "image": "https://cdn.tgdd.vn/Products/Images/42/303716/s16/iphone-15-green-2-650x650.jpg",
+      "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/d/i/dien-thoai-samsung-galaxy-m55_2.png",
       "id": 1
     },
     {
-      "name": "samsung 15 mới nè các tình yêu",
-      "price": 1,
+      "name": "Samsung 15 ",
+      "price": 1000,
       "description": "1",
       "category": "samsung",
       "image": "https://traidepbaniphone.com/thumbs/760x540x2/upload/product/iphone-15-pro-max-gold-thumbtz-650x650-2984.png",

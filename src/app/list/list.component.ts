@@ -61,8 +61,6 @@ export class ListComponent {
       this.allProducts = res;
       this.products = res;
     });
-
-    // console.log('ciong');
   }
 
   onSearch(): void {
